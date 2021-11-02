@@ -38,12 +38,12 @@ footer {
 #copyright {
     padding-top: 3px;
     padding-left: 75px;
-    color: aliceblue;
+    color: black;
     font-weight: bold;
 }
 
 #dateModified{
-    color: yellow;
+    color: black;
     font-weight: 200;
     padding-left: 170px;
 }
