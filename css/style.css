@@ -1,0 +1,49 @@
+h1 {
+    font-family: 'Zen Antique', serif;
+    padding-left: 30px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+header img {
+    float: right;
+    width: 200px;
+    height: auto;
+    box-shadow:5px 5px 3px 3px white;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+
+header, body, footer{
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: olive;
+    padding: 5px;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+footer {
+    background-color: olive;
+}
+
+#copyright {
+    padding-top: 3px;
+    padding-left: 75px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+#dateModified{
+    color: yellow;
+    font-weight: 200;
+    padding-left: 170px;
+}
