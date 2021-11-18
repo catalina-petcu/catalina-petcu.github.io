@@ -235,8 +235,8 @@ nav button {
 .weather_summary{
     display: grid;
     grid-template-columns: 110px 110px;
-    grid-template-rows: 5 ;
-    column-gap: 10px ;
+    grid-template-rows: 5;
+    column-gap: 10px;
     font-size: 8px;
     background-color: var(--accent1-color);
     opacity: 0.8;
