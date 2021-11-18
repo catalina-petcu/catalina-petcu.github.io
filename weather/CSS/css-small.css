@@ -53,6 +53,22 @@ h6 {
     color: var(--headline-color-on-white);
 }
 
+p {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
 header {
     padding: 1em;
     text-align: center;
@@ -155,7 +171,7 @@ nav ul li a,
 
 .primary-nav {
     background-color: #0c94ac;
-    font-size: 20px;
+
 }
 
 nav a:hover {
@@ -168,37 +184,23 @@ nav a:hover {
     color: black;
 }
 
+footer p {
+    font-size: 12px;
+}
 footer {
     background-color: #fac344;
-    font-size: 15px;
+
     text-align: center;
     padding: 5px;
 }
 
 .footer-nav {
     background-color: #fac344;
-    font-size: 15px;
-}
-
-p {
-    font-size: 16px;
-}
-
-h1 {
-    font-size: 30px;
-}
-
-h2 {
-    font-size: 25px;
-}
-
-h3 {
-    font-size: 20px;
 }
 
 section {
     background-color: var(--primary-color);
-    padding: 5px;
+    padding: 15px;
     margin: 10px;
     border: 3px solid var(--secondary-color);
 }
@@ -212,6 +214,95 @@ nav button {
     border:none;
     color: var(--accent1-color);
 }
+
+.active{
+    text-decoration: underline;
+    text-decoration-style: solid;
+    opacity: 0.9;
+}
+
+#banner {
+    background-color: var(--secondary-color);
+    max-width: 770px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+#banner h3 {
+    color: var(--accent-color1);
+}
+
+.weather_summary{
+    display: grid;
+    grid-template-columns: 110px 110px;
+    grid-template-rows: 5 ;
+    column-gap: 10px ;
+    font-size: 8px;
+    background-color: var(--accent1-color);
+    opacity: 0.8;
+    box-shadow: 0 0 30 px #333;
+}
+p.left{
+    grid-column: 1 / 2;
+    text-align: right;
+    font-size: 12px;
+}
+
+p.right {
+    grid-column: 2/3;
+    font-size: 12px;
+}
+
+
+.forecast_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.grid-col {
+    background-color: yellow;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    ;
+}
+
+.footer-grid map {
+    grid-column: 1/2;
+}
+
+.contact information {
+    grid-column: 2/3;
+}
+
+.article-image{
+     margin: 10px;
+     max-width: 300px;
+        width: 100%;
+        height: 100%;
+}
+
+.grid-col {
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    text-align: center;
+}
+
+.data {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.hero_image{
+        width: 100%;
+        height: 100%;
+}
+
+
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
