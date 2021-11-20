@@ -15,6 +15,3 @@ var date = dayOfWeek + ", " + dayOfMonth + " " + curMonth + ", " + curYear;
 if (today.getDay() != 5) {
     document.getElementById("banner").style.display = "none"
 }
-else {
-    document.getElementById("banner").style.display = "block"
-}

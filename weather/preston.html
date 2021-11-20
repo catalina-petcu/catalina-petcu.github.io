@@ -14,7 +14,11 @@
    <body>
    <div id="banner"><h3>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</h3></div>
    <header>
-      <img id="profilePicture" src="../lesson2/images/twitter_header_photo_2.jpg" alt="iReady2Go logo"> 
+    <picture class="profilePicture">
+ <source media = "(max-width: 400px)" srcset="images/header400.jpg">
+ <source media = "(max-width: 1000px)" srcset="images/header1000.jpg">
+
+      <img src="images/header1500.jpg" alt="iReady2Go logo"> 
    </header>
    <nav class="clearfix">
    <button onclick="toggleMenu()"> &#9776;  Menu</button>
@@ -30,12 +34,19 @@
  <main>
  <h1>Preston Idaho</h1>
  <div class="hero_div">
- <img class="hero_image" src = "images/hero_image.jpg" alt="Image of Preston">
+ <picture class="hero_image">
+ <source media = "(max-width: 400px)" srcset="images/hero400.jpg">
+ <source media = "(max-width: 1000px)" srcset="images/hero1000.jpg">
+ <img src="images/hero1500.jpg" alt="Preston">
+ </picture>
+
  <div class="weather_summary">
- <p class="left">Currently:</p><p class="right">Sunny</p>
-  <p class="left">High:</p><p class="right">76 F</p>
+ <p class="left">Currently:</p><p class="right"><span id="temperature">5</span>&#176;F</p>
+ <p class="right">Broken Clouds</p>
+  <p class="left">Wind Chill:</p><p class="right" id="chill-value"><span id="chill">0</span>&#176;F</p>
+  <p class="left">High:</p><p class="right">76&#176;F</p>
    <p class="left">Humidity:</p><p class="right">69%</p>
-    <p class="left">Wind Speed:</p><p class="right">5 mph</p>
+    <p class="left">Wind Speed:</p><p class="right"><span id="wind-speed">10</span> mph</p>
  </div>
  </div>
 
@@ -98,6 +109,7 @@ alt = "kitten!" >
          <p>&copy; iReady2Go | BYU-I Online Learning | Catalina Petcu </p>
          <p> <span id = "currentDate"></span></p>
       <script defer src="js/preston-js.js"></script>
+      <script defer src="js/windchill.js"></script>
    </footer>
    </body>
 </html>
