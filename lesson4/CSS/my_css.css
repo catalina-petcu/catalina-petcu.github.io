@@ -1,0 +1,15 @@
+.image-container {
+    width: min-content;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+article img[data-src] {
+    filter: blur(0.2em);
+}
+
+article img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
