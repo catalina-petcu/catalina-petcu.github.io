@@ -38,4 +38,9 @@
         float: right;
     }
 
+    .gallery {
+     grid-template-columns: auto auto;
+        
+    }
+
 }

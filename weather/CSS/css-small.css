@@ -307,7 +307,37 @@ p.right {
     height: auto;
 }
 
+article img[data-src] {
+    filter: blur(0.2em);
+}
 
+article img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+figcaption {
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.gallery{
+      justify-content: center;
+      align-items: center;
+      display: grid;
+      grid-template-columns: auto;
+       grid-gap: 40px;
+}
+
+.gallery picture {
+    padding: 10px;
+    box-shadow: 1px 7px 14px -1px #000000;
+}
+
+.gallery img {
+    max-width: 300px;
+         width: 100%;
+         height: auto;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
