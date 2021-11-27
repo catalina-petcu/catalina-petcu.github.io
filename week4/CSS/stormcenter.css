@@ -36,7 +36,7 @@ form label.top select {
 form label.sbs {
     display: block;
     padding: 0.75rem 0;
-    color: #black;
+    color: black;
 }
 
 form input.submitBtn {
