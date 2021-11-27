@@ -339,6 +339,11 @@ article img {
          height: auto;
 }
 
+.thanks{
+    border: solid 5px var(--primary-color);
+    padding: 10px;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
