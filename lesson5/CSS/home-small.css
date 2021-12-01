@@ -16,7 +16,7 @@ article{
 article img {
     width: 85%;
     max-width:100%;
-    max-height:auto;
+    max-height:100%;
     object-fit: contain;
 }
 
