@@ -1,0 +1,30 @@
+@media only screen and (min-width: 40em) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+
+    #soda-springs,
+    #preston,
+    #fish-haven {
+        display: block;
+    }
+
+    #preston{
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    #fish-haven{
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+
+    #soda-springs{
+        grid-column: 3/4;
+        grid-row: 1;
+    }
+    
+}

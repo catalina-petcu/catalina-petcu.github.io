@@ -1,0 +1,42 @@
+article {
+    padding: 15px;
+    display: block;
+    box-shadow: 0px 1px 21px -1px #FAC344;
+
+}
+
+main{
+    padding: 10px;;
+}
+
+article{
+    text-align: center;
+}
+
+article img {
+    width: 85%;
+    max-width:100%;
+    max-height:auto;
+    object-fit: contain;
+}
+
+.name, .motto {
+    padding: 0px;
+    margin: 0px;
+}
+
+.motto {
+    margin-top: 2px;
+}
+
+h2 {
+    text-shadow: 2px -1px 2px #FAC344;
+}
+
+
+h2,
+h5,
+h6 {
+text-align:center;
+
+}
