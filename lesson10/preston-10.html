@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-us">
+   <head>
+      <title>Catalina Petcu's Portal</title>
+      <meta charset="utf-8">
+      <meta name="author" content="Catalina Petcu">
+      <meta name="description" content="iReady2Go Preston page">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <link href = "CSS/css-small.css" rel=stylesheet>
+      <link href = "CSS/css-medium.css" rel=stylesheet>
+      <link href = "CSS/css-large.css" rel=stylesheet>
+   </head>
+   <body>
+   <div id="banner"><h3>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</h3></div>
+   <header>
+    <picture class="profilePicture">
+ <source media = "(max-width: 400px)" srcset="images/header400.jpg">
+ <source media = "(max-width: 1000px)" srcset="images/header1000.jpg">
+
+      <img src="images/header1500.jpg" alt="iReady2Go logo"> 
+      </picture>
+   </header>
+   <nav class="clearfix">
+   <button onclick="toggleMenu()"> &#9776;  Menu</button>
+   <ul id="primaryNav" class="hide">
+   <li><a href="../lesson5/index.html">Home</a></li>
+		<li class="active"><a href="preston.html">Preston</a></li>
+		<li><a href="color-scheme.html">Soda Springs</a></li>
+		<li><a href="typography.html">Fish Haven</a></li>
+        <li><a href="../week4/stormcenter.html">Storm Center</a></li>
+        <li><a href="../weather/gallery-7.html">Gallery</a></li>
+	</ul>
+</nav>
+ <main>
+ <h1>Preston Idaho</h1>
+ <div class="hero_div">
+ <picture class="hero_image">
+ <source media = "(max-width: 400px)" srcset="images/hero400.jpg">
+ <source media = "(max-width: 1000px)" srcset="images/hero1000.jpg">
+ <img src="images/hero1500.jpg" alt="Preston">
+ </picture>
+
+ <div class="weather_summary">
+ <p class="left">Currently:</p><p class="right"><span id="temperature"></span></p>
+  <p class="left">Wind Chill:</p><p class="right" id="chill-value"><span id="chill">0</span>&#176;F</p>
+  <p class="left">High:</p><p class="right"><span id="max-temperature"></span>&#176;F</p>
+   <p class="left">Humidity:</p><p class="right"><span id="humidity"></span></p>
+    <p class="left">Wind Speed:</p><p class="right"><span id="wind-speed">10</span> mph</p>
+ </div>
+ </div>
+
+ <h2> Five Day Forecast</h2>
+ <div class="forecast_grid">
+    <div class = "grid-col"><span id="day1"></span><br>
+     <img id="day1-img" src = "images/sun.png" alt = "sun" >
+    <div class="data"> <span id="day1-value"></span>&#176;F</div> </div> 
+
+    <div class = "grid-col"><span id="day2"></span><br>
+     <img id="day2-img" src = "images/sun.png" alt = "sun" >
+    <div class="data"> <span id="day2-value"></span>&#176;F</div> </div> 
+
+    <div class = "grid-col"><span id="day3"></span><br>
+     <img id="day3-img" src = "images/sun.png" alt = "sun" >
+    <div class="data"> <span id="day3-value"></span>&#176;F</div> </div> 
+
+     <div class = "grid-col"><span id="day4"></span><br>
+     <img id="day4-img" src = "images/sun.png" alt = "sun" >
+    <div class="data"> <span id="day4-value"></span>&#176;F</div> </div> 
+
+    <div class = "grid-col"><span id="day5"></span><br>
+     <img id="day5-img" src = "images/sun.png" alt = "sun" >
+    <div class="data"> <span id="day5-value"></span>&#176;F</div> </div> 
+
+    </div>
+ <section>
+ 
+   <h3>Working from home has increased in recent months</h3>
+    <div class="article">
+   <img class="article-image" src="images/work.jpg" alt = "Woman working at messy desk">
+   <p class="first-p">
+   According to the last date published by the town hall on Wednesday, November 17, 2021, the number of people working from home has increased compared to the previous quarter of 2020. Though it was expected that the vaccine would reduce the effects of the COVID-19 pandemic on the work environment, there are no sign that work would go back to normal.</p>
+   <p class="second-p">The majority of business that can funtion as employees work from home has decide to keep this practice as it has helped them save money they would have payed on rent, utilities, parking, etc. Most of employees have gotten used to this new way of working and have accepted happily this change as a long term practice.
+   </p>
+   </div>
+   </section>
+
+
+
+
+    </main>
+   <footer> 
+   <div class="footer-grid">
+   <div class="map">
+   <img src= "images/map.jpg" alt = "map of the cities">  
+   </div>
+   <div class="contact information">
+   <h4>Contact information</h4>
+   <p>590 Strawberry Lane, Preston, Idaho</p>
+   <p>+1(801)255 6355</p>
+   <p>feedback@iReady2Go.com</p>
+   <a href="facebook.com"><img class="icon" src="images/facebook.png" alt = "facebook icon"></a>
+   
+   <a href="instagram.com"><img class="icon" src="images/instagram.png" alt = "instagram icon"></a>
+   
+   <a href="whatsapp.com"><img class="icon" src="images/whatsapp.png" alt = "whatsapp icon"></a>
+   </div>  
+   </div>
+         <p>&copy; iReady2Go | BYU-I Online Learning | Catalina Petcu </p>
+         <p><a href="https://openweathermap.org/" target = "_blank">OpenWeatherMap</a> is the weather data source for this website.</p>
+         <p> <span id = "currentDate"></span></p>
+        <script src="JS/weatherapi.js"></script>
+      <script defer src="js/preston-js.js"></script>
+      <script defer src="js/windchill.js"></script>
+   </footer>
+   </body>
+</html>
