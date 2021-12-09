@@ -344,6 +344,16 @@ article img {
     padding: 10px;
 }
 
+#events-box{
+    background-color: #EAE7ED;
+    box-shadow: 5px 5px 15px 5px #0A060E;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";

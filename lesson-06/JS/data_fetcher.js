@@ -5,11 +5,11 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-       
+
         const towns = jsonObject['towns'];
         towns.forEach((town) => {
             var article = "";
-             console.log(town)
+            console.log(town)
             switch (town.name) {
                 case "Preston":
                     article = document.getElementById("preston");
