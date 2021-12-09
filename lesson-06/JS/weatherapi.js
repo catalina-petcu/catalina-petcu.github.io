@@ -5,11 +5,11 @@ if (document.title == "Preston") {
     apiURLforecast = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=6eaba2f545c31bd8f0b0bef8e9c804d2";
     apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=6eaba2f545c31bd8f0b0bef8e9c804d2";
 }
-else if (document.title = "Soda Springs") {
+else if (document.title == "Soda Springs") {
     apiURLforecast = "http://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=6eaba2f545c31bd8f0b0bef8e9c804d2";
     apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5607916&appid=6eaba2f545c31bd8f0b0bef8e9c804d2";
 }
-else if (document.title = "Fish Haven") {
+else if (document.title == "Fish Haven") {
     apiURLforecast = "http://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=6eaba2f545c31bd8f0b0bef8e9c804d2";
     apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5585010&appid=6eaba2f545c31bd8f0b0bef8e9c804d2";
 }
