@@ -1,0 +1,37 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 50em) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    article:nth-child(3) {
+        grid-column: span 1;
+    }
+
+    button {
+        display: none;
+    }
+
+   .reserve-button {
+       top: 250px;
+       left: 50px;
+   }
+
+   .rentals-summary {
+       grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+   }
+
+   .reserve-button {
+       font-size: 30px;
+   }
+
+}

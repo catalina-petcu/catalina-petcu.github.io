@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #EAE7ED;
+    --secondary-color: #66D37E;
+    --accent1-color: #C7E973;
+    --accent2-color: #0A060E;
+
+    /* change the values below to your chosen font(s) */
+    --heading-font: 'Noto Serif', Times New Roman, cursive;
+    --paragraph-font: 'Libre Baskerville',
+        Helvetica,
+        sans-serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #114236;
+    /* headlines on a white background */
+    --headline-color-on-color: #0A060E;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: #0A060E;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: #0A060E;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #EAE7ED;
+    --nav-link-color: #66D37E;
+    --nav-background-color: #EAE7ED;
+    --nav-hover-link-color: #C7E973;
+    --nav-hover-background-color: #0A060E;
+}
+
+
+html {
+    background-color: var(--primary-color);
+}
+
+body {
+    max-width: 940px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+p {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--paragraph-color-on-color);
+}
+
+header>h1,
+header>h2 {
+    color: var(--headline-color-on-color);
+}
+
+p,
+ul li {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+}
+
+ul li {
+    padding: 1em;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+}
+
+table,
+td,
+th {
+    padding: 5px;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 767px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #66D37E;
+    text-align: center;
+    box-shadow: 0 2px 15px gray;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a,
+.primary-nav {
+    display: block;
+    color: #093936;
+    text-align: center;
+    padding: 0.1rem;
+    text-decoration: none;
+    font-size: 13px;
+    background: linear-gradient(90deg, transparent, #C7E973, transparent) top / var(--d, 0) 10px no-repeat;
+    transition: 0.5s;
+    font-weight: bold;
+    
+}
+
+.primary-nav {
+    background-color: #66D37E;
+
+}
+
+main {
+    padding-top: 1em;
+}
+
+nav a:hover {
+    /* 	background-color: #bbb;
+	color: #36454f; */
+    --d: 75%;
+}
+
+.active {
+    color: black;
+}
+
+footer p {
+    font-size: 12px;
+}
+footer {
+    background-color: #C7E973;
+
+
+    padding: 5px;
+}
+
+.footer-nav {
+    background-color: #C7E973;
+}
+
+
+nav ul.hide{
+    display: none;
+}
+
+nav button {
+    background-color: transparent;
+    border:none;
+    color: var(--accent1-color);
+}
+
+.active{
+    text-decoration: underline;
+    text-decoration-style: solid;
+    opacity: 0.9;
+}
+
+#banner {
+    background-color: var(--secondary-color);
+    max-width: 770px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+#banner h3 {
+    color: var(--accent-color1);
+}
+
+.weather_summary{
+    display: grid;
+    grid-template-columns: 110px 110px;
+    column-gap: 10px;
+    font-size: 8px;
+    background-color: var(--accent1-color);
+    opacity: 0.8;
+    box-shadow: 0 0 30px #333;
+}
+p.left{
+    grid-column: 1 / 2;
+    text-align: right;
+    font-size: 12px;
+}
+
+p.right {
+    grid-column: 2/3;
+    font-size: 12px;
+}
+
+
+.forecast_grid {
+    justify-content: center;
+    background-color: #EAE7ED;
+    padding: 10px;
+    box-shadow: 0 2px 15px gray;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
+}
+
+.grid-col {
+    background-color: #66D37E;
+}
+
+.article-image{
+     margin: 10px;
+     max-width: 300px;
+        width: 100%;
+        height: 100%;
+}
+
+.grid-col {
+    text-align: center;
+}
+
+.data {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+.hero_image img{
+    width: 100%;
+    height: auto;
+}
+
+.profilePicture img{
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.rental-box{
+    box-shadow: 0 2px 15px gray;
+    padding: 20px;
+}
+
+.rentals-summary{
+    padding-bottom: 10px;
+}
+
+.centered{
+    text-align: center;
+}
+
+.reserve-button {
+    color: #17012e;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #66D37E;
+    opacity: .7;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.grid-col {
+    font-size: 75%;
+}
