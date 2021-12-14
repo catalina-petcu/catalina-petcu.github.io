@@ -1,13 +1,20 @@
 
-const requestURL = "https://github.com/catalina-petcu/catalina-petcu.github.io/blob/master/scooter-project/data/data.json"
-const url = "https://mfuller45.github.io/final/data/scoots.json";
-fetch(url)
+const requestURL = "https://catalina-petcu.github.io/scooter-project/data/data.json";
+fetch(requestURL)
     .then((response) => response.json())
-    .then((data) => {
+    .then((data) => {console.log(data)
         data.rentals.forEach((rental, index) => {
-            document.getElementById('rhd' + (index + 1)).innerHTML = rental.half1;
-            document.getElementById('rfd' + (index + 1)).innerHTML = rental.full1;
-            document.getElementById('whd' + (index + 1)).innerHTML = rental.half2;
-            document.getElementById('wfd' + (index + 1)).innerHTML = rental.full2;
+            console.log(rental)
+            tr = document.createElement("tr");
+            td1 = document.createElement("td");
+            td1.innerHTML = rental.name;
+            tr.appendChild(td1);
+            td2 = document.createElement("td");
+            td2.innerHTML = rental.persons;
+            tr.appendChild(td2);
+            td3 = document.createElement("td");
+            td3.innerHTML = rental["half-reservation"];
+            tr.appendChild(td3);
+            document.getElementById("table-body").appendChild(tr);
         });
     });
