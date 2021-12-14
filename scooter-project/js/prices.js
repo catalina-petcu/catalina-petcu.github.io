@@ -1,5 +1,7 @@
-
-
+$.getJSON("data.json", function (json) {
+    console.log(json); // this will show the info it in firebug console
+});
+/*
 const requestURL = "data/data.json"
 fetch(requestURL)
     .then(function (response) {
@@ -11,4 +13,4 @@ fetch(requestURL)
         for (let i = 0; i < prophets.length; i++) {
             console.log(info["Rental Type"])
         }
-    });
+    });*/

@@ -316,6 +316,22 @@ p.right {
     text-decoration: underline;
 }
 
+label.top,
+input {
+     display: block;
+     color: #114236;
+}
+
+input,
+textarea,
+label.top {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.colored-box {
+    background-color: #C7E973;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -323,6 +339,7 @@ p.right {
     display: table;
     clear: both;
 }
+
 
 .grid-col {
     font-size: 75%;
