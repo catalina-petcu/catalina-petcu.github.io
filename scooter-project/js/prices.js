@@ -1,9 +1,13 @@
 
 const requestURL = "https://github.com/catalina-petcu/catalina-petcu.github.io/blob/master/scooter-project/data/data.json"
-fetch(requestURL)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (jsonObject) {
-        console.log(jsonObject)
+const url = "https://mfuller45.github.io/final/data/scoots.json";
+fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+        data.rentals.forEach((rental, index) => {
+            document.getElementById('rhd' + (index + 1)).innerHTML = rental.half1;
+            document.getElementById('rfd' + (index + 1)).innerHTML = rental.full1;
+            document.getElementById('whd' + (index + 1)).innerHTML = rental.half2;
+            document.getElementById('wfd' + (index + 1)).innerHTML = rental.full2;
+        });
     });
