@@ -95,23 +95,3 @@ apiURL = "http://api.openweathermap.org/data/2.5/weather?id=3530103&appid=6eaba2
             })
         
         });
-
-    let eventsAPI = "https://byui-cit230.github.io/weather/data/towndata.json"
-
-    fetch(eventsAPI).then((response) => response.json())
-        .then((jsObject) => {
-            jsObject.towns.forEach((town) => {
-
-                if (town.name == document.title) {
-                    console.log(town.events)
-                    town.events.forEach((value) => {
-                        console.log(value)
-                        paragraph = document.createElement("p")
-                        paragraph.innerHTML = value
-                        box = document.querySelector("#events-box")
-                        box.appendChild(paragraph)
-                    })
-                }
-
-            })
-        });
