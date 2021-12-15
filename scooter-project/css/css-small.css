@@ -289,7 +289,7 @@ p.right {
     height: auto;
 }
 
-.caption {
+figcaption {
     color: var(--secondary-color);
     text-align: center;
 }
