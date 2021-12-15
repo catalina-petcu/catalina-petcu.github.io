@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en-us">
    <head>
-      <title>Easy Scooter Rentals</title>
+      <title>Easy Scooter Reservation</title>
       <meta charset="utf-8">
       <meta name="author" content="Catalina Petcu">
-      <meta name="description" content="Easy Scooter home Rental page">
+      <meta name="description" content="Easy Scooter Reservation page">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
       <link href = "CSS/css-small.css" rel=stylesheet>
@@ -25,17 +25,79 @@
    <button onclick="toggleMenu()"> &#9776;  Menu</button>
    <ul id="primaryNav" class="hide">
    <li ><a href="index.html">Home</a></li>
-		<li class="active"><a href="rentals.html">Rentals</a></li>
-		<li ><a href="reservations.html">Reservations</a></li>
+		<li ><a href="rentals.html">Rentals</a></li>
+		<li class="active"><a href="reservations.html">Reservations</a></li>
 		<li ><a href="tours.html">Tours</a></li>
         <li><a href="contact.html">Contact</a></li>
 	</ul>
 </nav>
  <main>
-  
- Information and Services
+  <h1>Reservation</h1>
+  <div class="rental-box">
+     <h3>Please be aware of the following:</h3>
+     <ul><li>
+A $50 security deposit is required to confirm reservations.</li><li>
+A valid drivers license is required in hand at time of rental.</li><li>
+No one under 12 years of age is allowed to ride on the scooters.</li><li>
+Fuel charge not included.</li><li>
+Unlimited mileage.</li><li>
+Liability insurance is free of charge.</li><li>
+Reservations rate requires 24 hour prior notification.</li><li>
+Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li><li>
+Payment via Google Pay, cash, credit card, debit card, or PayPal.</li><li>
+Rentals may be returned to either location.</li></ul>
+<br>
+<input class="inline" type="checkbox" name="terms" id="terms"><p>   I have read the reservation policy above and I will comply with it.</p>
 
- From that advances to confirmation.
+  </div>
+  <div class="rental-box">
+     <form method="get" action="thanks.html">
+     <legend>Personal Information</legend>
+ <label class="top">Full Name* <input type="text" name="name" required pattern="[A-Za-z _]{5,}"></label>
+        <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+       <label class="top">Phone* <input type="tel" name="phone" required></label>
+       <label class="top">Home Country <input type="text" name="country"></label>
+        <label class="top">Cruise Line <input type="text" name="cruise"></label>
+          </fieldset>
+  
+  <legend>Your Reservation</legend>
+  <label class="top" for="type">Rental Type:
+<select id="type" name="type"required>
+ <option value="" disabled selected>Select Type</option>
+  <option value="Metro">Honda Metro Scooter</option>
+  <option value="Dio">Honda Dio Scooter</option>
+  <option value="PCX">Honda PCX150 Scooter</option>
+    <option value="ATV">Honda Pioneer ATV</option>
+      <option value="Jeep4">Jeep Wrangler—4 door with a/c</option>
+        <option value="Jeep2">Jeep Wrangler—2 door</option>
+ 
+</select>
+
+<div> Period: </div>
+        <label class="sbs"><input type="radio" name="level" value="yes">Half Day (3 hrs)</label>
+        <label class="sbs"><input type="radio" name="level" value="maybe">Full Day</label>
+
+<label class="top" for="persons" required>Number of Persons:
+<select id="persons" name="persons">
+ <option value="" disabled selected>Select Number of Persons</option>
+  <option value="person1">1</option>
+  <option value="person2">2</option>
+  <option value="person3">3</option>
+    <option value="person4">4</option>
+      <option value="person5">5</option>
+ 
+</select>
+<label class="top" required>Rental  Day <input type="date" name="rentalDate"></label>
+
+<label class="top" for="additional">Additional Comments:</label>
+
+<textarea id="additional" name="additional" rows="4" cols="50">
+
+</textarea>
+
+<input type="submit" name="submit" value="Make Reservation" class="submitBtn">
+</form>
+</div>
     </main>
    <footer> 
 
@@ -53,9 +115,6 @@
    <a href="https://www.whatsapp.com/"><img class="icon" src="images/whatsapp.png" alt = "whatsapp icon"></a>
        </div>
        <div class="right-footer">
-   <p>Photo credit</p>
-   <p>Honda scooter: Photo by <a href="https://unsplash.com/@i_real_chanakya_vardhan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chanakya Vardhan</a> on <a href="https://unsplash.com/s/photos/motor-scooter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-   </p><p>Jeep: Photo by <a href="https://unsplash.com/@jetflow?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">George Flowers</a> on <a href="https://unsplash.com/s/photos/jeep?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
    </p>
 </div>
    </div>

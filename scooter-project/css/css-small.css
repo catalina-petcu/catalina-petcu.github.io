@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro&display=swap');
 
 :root {
     /* change the values below to your colors from your palette */
@@ -9,7 +8,9 @@
     --accent2-color: #0A060E;
 
     /* change the values below to your chosen font(s) */
-    --heading-font: 'Noto Serif', Times New Roman, cursive;
+    --heading-font: 'Source Sans Pro',
+    Times New Roman,
+    cursive;
     --paragraph-font: 'Libre Baskerville',
         Helvetica,
         sans-serif;
@@ -349,7 +350,120 @@ label.top {
     word-break: normal;
 }
 
+table {
+    table-layout: fixed;
+}
+td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    text-align:center
+}
 
+.gallery {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 40px;
+    margin: 15px;
+}
+
+.gallery picture {
+    padding: 10px;
+    box-shadow: 1px 7px 14px -1px #000000;
+}
+
+.gallery img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+.tour{
+    background-color: #C7E973;
+}
+
+.left-image{
+    padding: 15px;
+}
+
+.font15{
+    font-size: 14px;
+    line-height: 18pt;
+}
+
+.rental-box ul li {
+    padding-bottom: 0px;
+}
+
+.inline{
+    display: inline-block;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #0C94AC;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #0C94AC;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+
+}
+
+form label.top input,
+form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #0C94AC;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.75rem 0;
+    color: black;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #0C94AC;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+label {
+    font-size: 1rem;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

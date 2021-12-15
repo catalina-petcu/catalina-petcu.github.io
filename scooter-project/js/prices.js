@@ -15,6 +15,15 @@ fetch(requestURL)
             td3 = document.createElement("td");
             td3.innerHTML = rental["half-reservation"];
             tr.appendChild(td3);
+            td4 = document.createElement("td");
+            td4.innerHTML = rental["full-reservation"];
+            tr.appendChild(td4);
+            td5 = document.createElement("td");
+            td5.innerHTML = rental["half-walk"];
+            tr.appendChild(td5);
+            td6 = document.createElement("td");
+            td6.innerHTML = rental["full-walk"];
+            tr.appendChild(td6);
             document.getElementById("table-body").appendChild(tr);
         });
     });

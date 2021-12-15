@@ -72,4 +72,18 @@ footer{
 .right-footer{
     grid-column: 2/3;
 }
+
+ .gallery {
+     grid-template-columns: auto auto;
+
+ }
+
+ .left-image{
+     float: left;
+ }
+
+  .right-image {
+      float: right;
+      margin: 10px;
+  }
 }
