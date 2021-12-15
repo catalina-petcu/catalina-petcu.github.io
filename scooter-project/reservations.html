@@ -33,7 +33,7 @@
 </nav>
  <main>
   <h1>Reservation</h1>
-  <div class="rental-box">
+  <div class="rental-box colored-box">
      <h3>Please be aware of the following:</h3>
      <ul><li>
 A $50 security deposit is required to confirm reservations.</li><li>
@@ -47,11 +47,12 @@ Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.
 Payment via Google Pay, cash, credit card, debit card, or PayPal.</li><li>
 Rentals may be returned to either location.</li></ul>
 <br>
-<input class="inline" type="checkbox" name="terms" id="terms"><p>   I have read the reservation policy above and I will comply with it.</p>
-
   </div>
   <div class="rental-box">
      <form method="get" action="thanks.html">
+        <div class="flex-box">
+<input type="checkbox" name="terms" id="terms" required><p>   I have read the reservation policy above and I will comply with it.</p>
+</div>
      <legend>Personal Information</legend>
  <label class="top">Full Name* <input type="text" name="name" required pattern="[A-Za-z _]{5,}"></label>
         <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
@@ -61,6 +62,7 @@ Rentals may be returned to either location.</li></ul>
           </fieldset>
   
   <legend>Your Reservation</legend>
+
   <label class="top" for="type">Rental Type:
 <select id="type" name="type"required>
  <option value="" disabled selected>Select Type</option>
@@ -72,11 +74,11 @@ Rentals may be returned to either location.</li></ul>
         <option value="Jeep2">Jeep Wrangler—2 door</option>
  
 </select>
+</label>
 
 <div> Period: </div>
         <label class="sbs"><input type="radio" name="level" value="yes">Half Day (3 hrs)</label>
         <label class="sbs"><input type="radio" name="level" value="maybe">Full Day</label>
-
 <label class="top" for="persons" required>Number of Persons:
 <select id="persons" name="persons">
  <option value="" disabled selected>Select Number of Persons</option>
@@ -87,7 +89,7 @@ Rentals may be returned to either location.</li></ul>
       <option value="person5">5</option>
  
 </select>
-<label class="top" required>Rental  Day <input type="date" name="rentalDate"></label>
+<label class="top">Rental  Day <input type="date" name="rentalDate" required></label>
 
 <label class="top" for="additional">Additional Comments:</label>
 
