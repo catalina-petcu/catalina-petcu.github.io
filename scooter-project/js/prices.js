@@ -1,5 +1,5 @@
 
-const requestURL = "https://catalina-petcu.github.io/scooter-project/data/data.json";
+const requestURL = "data/data.json";
 fetch(requestURL)
     .then((response) => response.json())
     .then((data) => {console.log(data)
